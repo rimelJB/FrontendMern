@@ -3,7 +3,7 @@ import axios from"axios"
 export const register=({name,email,password}, navigate)=>async(dispatch)=>{
 try {
     dispatch({type:"registerProcess"})
-    await axios.post("http://localhost:5000/api/user/register",{name,email,password})
+    await axios.post("https://irentbackend.onrender.com/api/user/register",{name,email,password})
     dispatch({type:"registerSuccess"})
     navigate("/login")
 } catch (error) {
@@ -14,7 +14,7 @@ try {
 export const login=({email,password})=>async(dispatch)=>{
     try {
         dispatch({type:"loginProcess"})
-        const res=await axios.post("http://localhost:5000/api/user/login",{email,password})
+        const res=await axios.post("https://irentbackend.onrender.com/api/user/login",{email,password})
         console.log("res.data.token=",res.data.token);
           await localStorage.setItem("token", res.data.token)
         dispatch({type:"loginSuccess"})
@@ -30,7 +30,7 @@ export const login=({email,password})=>async(dispatch)=>{
             dispatch({type:'authProcess'})
             const token=await localStorage.getItem("token")
             console.log("token",token);
-            const res=await axios.get('http://localhost:5000/api/user/auth',
+            const res=await axios.get('https://irentbackend.onrender.com/api/user/auth',
             {
                 // headers:{'authorization':token}
                 headers:{'authorization':token}
