@@ -1,0 +1,107 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+body{
+  min-height: 100vh;
+}
+#root {
+  background-color: #907bef;
+}
+
+.items{position:relative;
+}
+.banner1 {
+  background-image: url(images/Banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  z-index: 0;
+
+}
+.bannerlog {
+  background-image: url(images/pic2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.9;
+  z-index: 0;
+
+}
+.banner_reg{ background-image: url(images/pic5.png);
+  background-repeat:no-repeat;
+  background-size: 100%;
+  opacity: 0.9;
+  z-index: 0;
+  }
+.ftbanner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  -webkit-box-shadow: inset 0 0 0 2000px #907befd6;
+  box-shadow: inset 0 0 0 2000px #dbbffaae;
+  z-index: 1;
+
+}
+
+
+.lbox {
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+  flex-wrap: wrap;
+	justify-content: center;
+  opacity: 0.9;
+  -webkit-box-shadow: inset 0 0 0 2000px #907befd6;
+  box-shadow: inset 0 0 0 2000px #dbbffaae;
+  z-index: 1;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  opacity: 1;
+  padding: 30px;
+  position: relative;
+}
+.lbox:hover  {
+  transform: scale(0.9);
+}
+
+
+h1,
+h2,p {
+  font-weight: 700;
+  font-family: "system-ui,-apple-system," Segoe UI",Roboto," Helvetica Neue",Arial," Noto Sans"," Liberation Sans",sans-serif," Apple Color Emoji"," Segoe UI Emoji"," Segoe UI Symbol"," Noto Color Emoji"";
+  word-spacing: 5px;
+  color: #212529;
+}
+.sticky {
+	overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 20;
+}
+
+.footer1 {
+  background-image: url(images/World.png);
+  position:relative;
+ 
+  padding: 4%;
+  width: 100%;
+  opacity: 0.7;
+  -webkit-box-shadow: inset 0 0 0 2000px #907bef;
+  box-shadow: inset 0 0 0 2000px #dabffadd;
+  z-index: 1;
+}
+
+.bg{ background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  -webkit-box-shadow: inset 0 0 0 2000px #907befd6;
+  box-shadow: inset 0 0 0 2000px #dbbffaae;
+  z-index: 1;
+}
+.bt1{background-color:#c3b6fe ;}
+
